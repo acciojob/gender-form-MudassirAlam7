@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import './../styles/App.css';
 
 const App = () => {
-  const[gender, setGender] = useState("male")
-  const[size, setSize] = useState('small')
+  const[gender, setGender] = useState("")
+  const[size, setSize] = useState('')
 
 
   function handleGenderChange(e){
