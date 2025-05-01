@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import './../styles/App.css';
 
 const App = () => {
-  const[gender, setGender] = useState("")
-  const[size, setSize] = useState('')
+  const[gender, setGender] = useState("male")
+  const[size, setSize] = useState('small')
 
 
   function handleGenderChange(e){
@@ -34,7 +34,7 @@ const App = () => {
       {
         gender ==="male" && (
           <div>
-            <label htmlFor="">Select your shirt size :</label>
+            <h2>Select your shirt size:</h2>
             <br />  
             <select name="" id="" value={size} onChange={handleSizeChange}>
               <option value="">Select</option>
@@ -48,7 +48,7 @@ const App = () => {
       {
         gender === "female" && (
           <div>
-            <label htmlFor="">Select your dress size : </label>
+            <h2>Select your dress size:</h2>
             <br />
             <select name="" id="" value={size} onChange={handleSizeChange}>
             <option value="">Select</option>
